@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 st.set_page_config(layout='wide')
 
-df=pd.read_csv('C:/setup/India Data Viz/india.csv')
+df=pd.read_csv('India-Data-Viz/india.csv')
 df=df.drop(columns=['Literate'])
 a=list(df['State'].unique())
 a.insert(0,'OverAll India')
